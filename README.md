@@ -159,4 +159,4 @@ Cliente Fictício: VetCare — Hospital Veterinário e Centro Diagnóstico
 
 Instituição de Ensino: Escola SENAI Henrique Lupo — Araraquara/SP
 
-Desenvolvido por: [Seu Nome Aqui]
+Desenvolvido por: [Thiago Henrique]
