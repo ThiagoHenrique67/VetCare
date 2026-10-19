@@ -1,0 +1,32 @@
+:root {
+/* Cores Principais - Identidade Saúde Animal */
+--color-bg-main: #f0fdf4;
+--color-bg-card: #ffffff;
+--color-sidebar-bg: #064e3b;
+--color-sidebar-text: #ecfdf5;
+--color-primary: #059669;
+--color-primary-hover: #047857;
+--color-secondary: #0d9488;
+--color-accent: #f59e0b;
+
+/* Textos e Bordas */
+--color-text-title: #022c22;
+--color-text-body: #1f2937;
+--color-text-muted: #4b5563;
+--color-border: #d1fae5;
+
+/* Tipografia */
+--font-main: 'Poppins', system-ui, -apple-system, sans-serif;
+--font-size-sm: 1.4rem;
+--font-size-base: 1.6rem;
+--font-size-lg: 2rem;
+--font-size-xl: 3.2rem;
+
+/* Sombras e Efeitos */
+--shadow-card: 0 10px 20px -5px rgba(5, 150, 105, 0.15);
+--shadow-hover: 0 15px 30px -5px rgba(5, 150, 105, 0.3);
+--radius-sm: 0.8rem;
+--radius-md: 1.6rem;
+
+--transition: all 0.3s ease-in-out;
+}
