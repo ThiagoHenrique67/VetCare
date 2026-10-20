@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VeteCare Veterinário</title>
+    <title>VetCare Hospital Veterinário</title>
 
+    <!-- Importação da fonte Poppins do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,48 +19,49 @@
 
 <body>
 
-        <header class="sidebar">
-            <div class="sidebar__brand">
-                <h1 class="sidebar__title">VetCare<span class="sidebar__title--highlight">Hospital</span></h1>
-            </div>
+    <!-- Menu Lateral Esquerdo Fixo -->
+    <header class="sidebar">
+        <div class="sidebar__brand">
+            <h1 class="sidebar__title">VetCare<span class="sidebar__title--highlight">Hospital</span></h1>
+        </div>
 
-            <nav class="sidebar__nav">
-                <ul class="sidebar__list">
-                    <li class="sidebar__item"><a href="#home" class="nav__link">Início</a></li>
-                    <li class="sidebar__item"><a href="#especialidades" class="nav__link">Especialidades</a></li>
-                    <li class="sidebar__item"><a href="#equipe" class="nav__link">Equipe Médica</a></li>
-                    <li class="sidebar__item"><a href="#infraestrutura" class="nav__link">Dúvidas</a></li>
-                    <li class="sidebar__item"><a href="#faq" class="nav__link">FAQ</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="sidebar__nav">
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a href="#home" class="sidebar__link">Início</a></li>
+                <li class="sidebar__item"><a href="#especialidades" class="sidebar__link">Especialidades</a></li>
+                <li class="sidebar__item"><a href="#equipe" class="sidebar__link">Equipe Médica</a></li>
+                <li class="sidebar__item"><a href="#infraestrutura" class="sidebar__link">Infraestrutura</a></li>
+                <li class="sidebar__item"><a href="#faq" class="sidebar__link">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- seção de inicio -->
-        <main class="main-contant">
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
 
-            <section id="home" class="section-hero">
-                <div class="section-hero__container">
-                    <article class="section-hero__content">
-                        <h2 class="section-hero__title">Cuidados Especializados e Amor ao Seu Pet</h2>
-                        <p class="section-hero__text">
-                            O Hospital Veterinário VetCare oferece estrutura hospitalar completa 24 horas por dia.
-                            Nossa equipe é composta por especialistas dedicados ao diagnóstico preciso e tratamento
-                            humanizado para cães, gatos e animais silvestres.
-                        </p>
-                    </article>
+        <!-- Seção 1 -->
+        <section id="home" class="section-hero">
+            <div class="section-hero__container">
+                <article class="section-hero__content">
+                    <h2 class="section-hero__title">Cuidados Especializados e Amor ao Seu Pet</h2>
+                    <p class="section-hero__text">
+                        O Hospital Veterinário VetCare oferece estrutura hospitalar completa 24 horas por dia. 
+                        Nossa equipe é composta por especialistas dedicados ao diagnóstico preciso e tratamento humanizado para cães, gatos e animais silvestres.
+                    </p>
+                </article>
 
-                    <aside class="section-hero__aside">
-                        <div class="card-image">
-                            <img src=" https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital"
-                             alt="Instalações do VetCare Hospital"
+                <aside class="section-hero__aside">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital" 
+                             alt="Instalações do VetCare Hospital" 
                              class="card-image__img">
-                        </div>
-                    </aside>
-                </div>
-            </section>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-            <!-- seção Especialidades -->
-            <section id="especialidades" class="section">
+        <!-- Seção Especialidades -->
+        <section id="especialidades" class="section">
             <div class="section__header">
                 <h2 class="section__title">Nossas Especialidades</h2>
             </div>
@@ -103,28 +105,28 @@
             </div>
         </section>
 
-            <!-- seção Equipe Médica -->
-            <section id="equipe" class="section section--alt">
-                <div class="section__header">
-                    <h2 class="section__title">Corpo Clínico Responsável</h2>
-                </div>
+        <!-- Seção 3 Corpo Clínico -->
+        <section id="equipe" class="section section--alt">
+            <div class="section__header">
+                <h2 class="section__title">Corpo Clínico Responsável</h2>
+            </div>
 
-                <div class="cards-grid">
-                    <article class="card card--vet">
-                        <img src="https://images.unsplash.com/photo-1758691462651-611d730c5272?q=80&w=1332&auto=format&fit=crop" 
-                             alt="Dra. Camila Rocha" 
-                             class="card__img">
-                        <div class="card__body">
-                            <h3 class="card__title">Dra. Camila Rocha</h3>
-                            <span class="card__badge">CRMV 12.450</span>
-                            <p class="card__text">Especialista em Cirurgia Geral e Cuidados Intensivos.</p>
-                        </div>
-                    </article>
+            <div class="cards-grid">
+                <article class="card card--vet">
+                    <img src="https://images.unsplash.com/photo-1758691462651-611d730c5272?q=80&w=1332&auto=format&fit=crop" 
+                         alt="Dra. Camila Rocha" 
+                         class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__title">Dra. Camila Rocha</h3>
+                        <span class="card__badge">CRMV 12.450</span>
+                        <p class="card__text">Especialista em Cirurgia Geral e Cuidados Intensivos.</p>
+                    </div>
+                </article>
 
-                    <article class="card card--vet">
-                        <img src="https://images.unsplash.com/photo-1758691461516-7e716e0ca135?q=80&w=1332&auto=format&fit=crop" 
-                             alt="Dr. Henrique Silva" 
-                             class="card__img">
+                <article class="card card--vet">
+                    <img src="https://images.unsplash.com/photo-1758691461516-7e716e0ca135?q=80&w=1332&auto=format&fit=crop" 
+                         alt="Dr. Henrique Silva" 
+                         class="card__img">
                     <div class="card__body">
                         <h3 class="card__title">Dr. Henrique Silva</h3>
                         <span class="card__badge">CRMV 15.890</span>
@@ -145,17 +147,17 @@
             </div>
         </section>
 
-            <!-- seção infraestrutura -->
-            <section id="infraestrutura" class="section">
-                <div class="section__header">
-                    <h2 class="section__title">Estrutura e Horários de Atendimento</h2>
-                </div>
+        <!-- Seção 4 Infraestrutura -->
+        <section id="infraestrutura" class="section">
+            <div class="section__header">
+                <h2 class="section__title">Estrutura e Horários de Atendimento</h2>
+            </div>
 
-                <div class="infra-content">
-                    <article class="infra-content__text-box">
-                        <p class="infra-content__text">
-                            Contamos com centro cirúrgico equipado com anestesia inalatória, laboratório de análises clínicas próprio e leitos de UTI individualizados com monitoramento contínuo.
-                        </p>
+            <div class="infra-content">
+                <article class="infra-content__text-box">
+                    <p class="infra-content__text">
+                        Contamos com centro cirúrgico equipado com anestesia inalatória, laboratório de análises clínicas próprio e leitos de UTI individualizados com monitoramento contínuo.
+                    </p>
                 </article>
 
                 <div class="hours-box">
@@ -166,47 +168,46 @@
             </div>
         </section>
 
-            <!-- FAQS -->
-            <section id="faq" class="faq">
-                <h2 class="faq__title">Perguntas Frequentes</h2>
-                <div class="faq__wrapper">
-                    <details class="faq__item">
-                        <summary class="faq__summary">A clínica atende emergências sem agendamento prévio?</summary>
-                        <p class="faq__text">Sim. Nosso setor de Pronto Atendimento funciona 24 horas por dia, 7 dias
-                            por
-                            semana, por ordem de gravidade.</p>
-                    </details>
+        <!-- Seção 5 FAQ Interativo -->
+        <section id="faq" class="faq">
+            <h2 class="faq__title">Perguntas Frequentes (FAQ)</h2>
+            <div class="faq__wrapper">
+                <details class="faq__item">
+                    <summary class="faq__summary">A clínica atende emergências sem agendamento prévio?</summary>
+                    <p class="faq__text">
+                        Sim. Nosso setor de Pronto Atendimento funciona 24 horas por dia, 7 dias por semana, por ordem de gravidade.
+                    </p>
+                </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__summary">Quais documentos preciso levar na primeira consulta do meu pet?</summary>
-                        <p class="faq__text">Recomendamos trazer a carteira de vacinação, histórico de exames anteriores
-                            e lista
-                            de medicamentos em uso. </p>
-                    </details>
+                <details class="faq__item">
+                    <summary class="faq__summary">Quais documentos preciso levar na primeira consulta do meu pet?</summary>
+                    <p class="faq__text">
+                        Recomendamos trazer a carteira de vacinação, histórico de exames anteriores e lista de medicamentos em uso.
+                    </p>
+                </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__summary">É necessário jejum para a realização de exames de sangue?</summary>
-                        <p class="faq__text"> Para a maioria dos exames bioquímicos e de imagem, solicita-se jejum
-                            alimentar de
-                            8 a 12 horas. Água pode ser oferecida moderadamente</p>
+                <details class="faq__item">
+                    <summary class="faq__summary">É necessário jejum para a realização de exames de sangue?</summary>
+                    <p class="faq__text">
+                        Para a maioria dos exames bioquímicos e de imagem, solicita-se jejum alimentar de 8 a 12 horas. Água pode ser oferecida moderadamente.
+                    </p>
+                </details>
 
-                    </details>
+                <details class="faq__item">
+                    <summary class="faq__summary">A VetCare realiza atendimento de animais exóticos e silvestres?</summary>
+                    <p class="faq__text">
+                        Sim, possuímos veterinários especializados no atendimento de aves, répteis e pequenos roedores com agendamento prévio.
+                    </p>
+                </details>
+            </div>
+        </section>
+    </main>
 
-                    <details class="faq__item">
-                        <summary class="faq__summary">A VetCare realiza atendimento de animais exóticos e silvestres?</summary>
-                        <p class="faq__text"> Sim, possuímos veterinários especializados no atendimento de aves, répteis
-                            e pequenos roedores com agendamento prévio</p>
-                    </details>
-                </div>
-            </section>
+    <a class="botao" href="https://wa.me/551633033800" alt="falar com a VetCare pelo WhatsApp">
+        Fale pelo WhatsApp
+    </a>
 
-        </main>
-
-            <a class="botao" href="https://wa.me/551633033800" alt="falar com a VetCare pelo WhatsApp">
-                Fale pelo WhatsApp
-            </a>
-
-    <!-- rodapé -->
+    <!-- Rodapé Fixo -->
     <footer class="footer">
         <div class="footer__container">
             <p class="footer__text">VetCare Hospital Veterinário - Atendimento 24 Horas.</p>
