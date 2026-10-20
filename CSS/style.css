@@ -24,3 +24,12 @@ body{
   box-shadow: 0.4rem 0 1.5rem rgba(0, 0, 0, 0.1);
 }
 
+.sidebar__brand {
+ margin-bottom: 4.0rem;
+}
+
+.sidebar__title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-sidebar-text);
+}
