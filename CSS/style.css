@@ -2,10 +2,25 @@
 @import './reset.css';
 
 body{
-    font-family: var(--font-main);
-    font-size: var(--font-size-base);
-    color: var(--color-text-body);
-    background-color: var(--color-bg-main);
-    overflow-x: hidden;
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  color: var(--color-text-body);
+  background-color: var(--color-bg-main);
+  overflow-x: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 26.0rem;
+  height: 100vh;
+  background-color: var(--color-sidebar-bg);
+  color: var(--color-sidebar-text);
+  display: flex;
+  flex-direction: column;
+  padding: 3.0rem 2.0rem;
+  z-index: 100;
+  box-shadow: 0.4rem 0 1.5rem rgba(0, 0, 0, 0.1);
 }
 
