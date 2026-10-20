@@ -1,35 +1,55 @@
 @import './variable.css';
 @import './reset.css';
 
-body{
-  font-family: var(--font-main);
-  font-size: var(--font-size-base);
-  color: var(--color-text-body);
-  background-color: var(--color-bg-main);
-  overflow-x: hidden;
+body {
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    color: var(--color-text-body);
+    background-color: var(--color-bg-main);
+    overflow-x: hidden;
 }
 
+/* Sidebar Fixa */
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 26.0rem;
-  height: 100vh;
-  background-color: var(--color-sidebar-bg);
-  color: var(--color-sidebar-text);
-  display: flex;
-  flex-direction: column;
-  padding: 3.0rem 2.0rem;
-  z-index: 100;
-  box-shadow: 0.4rem 0 1.5rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 26.0rem;
+    height: 100vh;
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-sidebar-text);
+    display: flex;
+    flex-direction: column;
+    padding: 3.0rem 2.0rem;
+    z-index: 100;
+    box-shadow: 0.4rem 0 1.5rem rgba(0, 0, 0, 0.1);
 }
 
 .sidebar__brand {
- margin-bottom: 4.0rem;
+    margin-bottom: 4.0rem;
 }
 
 .sidebar__title {
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  color: var(--color-sidebar-text);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-sidebar-text);
+}
+
+.sidebar__title--highlight {
+    color: var(--color-accent);
+}
+
+.botao {
+    position: fixed;
+    right: 2rem;
+    bottom: 10vh;
+    z-index: 1100;
+    padding: 1.2rem 2.4rem;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-title);
+    background-color: var(--color-accent);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
 }
