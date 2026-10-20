@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VateCare</title>
+    <title>VeteCare Veterinário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/variables.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
 </head>
@@ -12,126 +19,155 @@
 <body>
 
     <body>
-        <header class="header">
-
+        <header class="sidebar">
             <div class="header__brand">
-                <h1 class="header__title">VetCare Hospital</h1>
+                <h1 class="sidebar__title">VetCare<span class="sidebar__title--highlight">Hospital</span></h1>
             </div>
 
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
-                    <li class="nav__item"><a href="#especialidades" class="nav__link">Especialidades</a></li>
-                    <li class="nav__item"><a href="#equipe " class="nav__link">Equipe Médica</a></li>
-                    <li class="nav__item"><a href="#infraestrutura" class="nav__link">Dúvidas</a></li>
-                    <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item"><a href="#home" class="nav__link">Início</a></li>
+                    <li class="sidebar__item"><a href="#especialidades" class="nav__link">Especialidades</a></li>
+                    <li class="sidebar__item"><a href="#equipe" class="nav__link">Equipe Médica</a></li>
+                    <li class="sidebar__item"><a href="#infraestrutura" class="nav__link">Dúvidas</a></li>
+                    <li class="sidebar__item"><a href="#faq" class="nav__link">FAQ</a></li>
                 </ul>
             </nav>
 
         </header>
 
-        <main>
+        <main class="main-contant">
             <!-- seção de inicio -->
-            <section id="home" class="section-home">
-                <div class="section-home">
-                    <article class="section-home__content">
-                        <h2 class="section-home__title">Cuidados Especializados e Amor ao Seu Pet</h2>
-                        <p>O Hospital Veterinário VetCare oferece estrutura hospitalar completa 24 horas por dia.
+
+            <section id="home" class="section-hero">
+                <div class="section-hero__container">
+                    <article class="section-hero__content">
+                        <h2 class="section-hero__title">Cuidados Especializados e Amor ao Seu Pet</h2>
+                        <p class="section-hero__text">O Hospital Veterinário VetCare oferece estrutura hospitalar completa 24 horas por dia.
                             Nossa equipe é composta por especialistas dedicados ao diagnóstico preciso e tratamento
-                            humanizado para cães, gatos e animais silvestres.</p>
+                            humanizado para cães, gatos e animais silvestres.
+                        </p>
                     </article>
 
-                    <aside class="section-home__aside">
+                    <aside class="section-hero__aside">
                         <div class="card-image">
-                            <img src=" https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital" alt="">
+                            <img src=" https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital"
+                             alt=""
+                             class="card__img">
                         </div>
                     </aside>
                 </div>
-
             </section>
 
             <!-- seção Especialidades -->
-            <section id="Especialidades" class="section-Especialidades section-Especialidades--reverse">
-                <div class="section-Especialidades__conteiner">
-                    <article class="section-Especialidades__content">
-                        <h2 class="section-Especialidades__title"> Especialidades Médicas</h2>
-                    </article>
+            <section id="especialidades" class="section">
+            <div class="section__header">
+                <h2 class="section__title">Nossas Especialidades</h2>
+            </div>
 
-                    <aside class="section-Especialidades">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1770836037275-38b44e4b101f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                alt="">
-                            <p> Avaliação preventiva e exames ecocardiográficos avançados
-                                para garantir a saúde cardíaca do seu animal.</p>
-                        </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1770836037275-38b44e4b101f?q=80&w=687&auto=format&fit=crop" 
+                         alt="Cardiologia Veterinária" 
+                         class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__title">Cardiologia Veterinária</h3>
+                        <p class="card__text">
+                            Avaliação preventiva e exames ecocardiográficos avançados para garantir a saúde cardíaca do seu animal.
+                        </p>
+                    </div>
+                </article>
 
-                        <aside class="section-Especialidades">
-                            <div class="card-image">
-                                <img src="https://plus.unsplash.com/premium_photo-1661963697387-9ba753d0df95?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                    alt="">
-                                <p>Cirurgias complexas e tratamento de fraturas com
-                                    equipamentos de última geração.</p>
-                            </div>
+                <article class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661963697387-9ba753d0df95?q=80&w=688&auto=format&fit=crop" 
+                         alt="Ortopedia e Traumatologia" 
+                         class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__title">Ortopedia e Traumatologia</h3>
+                        <p class="card__text">
+                            Cirurgias complexas e tratamento de fraturas com equipamentos de última geração.
+                        </p>
+                    </div>
+                </article>
 
-                            <aside class="section-Especialidades">
-                                <div class="card-image">
-                                    <img src="https://images.unsplash.com/photo-1654895716780-b4664497420d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                        alt="">
-                                    <p>Diagnóstico preciso de alergias, infecções cutâneas e
-                                        tratamentos terapêuticos modernos.</p>
-                                </div>
-                            </aside>
-                </div>
-            </section>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1654895716780-b4664497420d?q=80&w=687&auto=format&fit=crop" 
+                         alt="Dermatologia Especializada" 
+                         class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__title">Dermatologia Especializada</h3>
+                        <p class="card__text">
+                            Diagnóstico preciso de alergias, infecções cutâneas e tratamentos terapêuticos modernos.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
             <!-- seção Equipe Médica -->
-            <section id="equipe" class="section-equipe">
-                <div class="section-equipe__container">
-                    <article class="section-equipe__content">
-                        <h2 class="section-equipe__title">Corpo Clínico Responsáve</h2>
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1758691462651-611d730c5272?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                alt="">
+<section id="equipe" class="section section--alt">
+            <div class="section__header">
+                <h2 class="section__title">Corpo Clínico Responsável</h2>
+            </div>
 
-                            <p>Dra. Camila Rocha - CRMV 12.450 - Especialista em Cirurgia Geral e Cuidados
-                                Intensivos.</p>
-                        </div>
+            <div class="cards-grid">
+                <article class="card card--vet">
+                    <img src="https://images.unsplash.com/photo-1758691462651-611d730c5272?q=80&w=1332&auto=format&fit=crop" 
+                         alt="Dra. Camila Rocha" 
+                         class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__title">Dra. Camila Rocha</h3>
+                        <span class="card__badge">CRMV 12.450</span>
+                        <p class="card__text">Especialista em Cirurgia Geral e Cuidados Intensivos.</p>
+                    </div>
+                </article>
 
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1758691461516-7e716e0ca135?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                alt="">
-                            <p> Dr. Henrique Silva - CRMV 15.890 - Especialista em Neurologia e Ortopedia
-                                Animal.</p>
-                        </div>
+                <article class="card card--vet">
+                    <img src="https://images.unsplash.com/photo-1758691461516-7e716e0ca135?q=80&w=1332&auto=format&fit=crop" 
+                         alt="Dr. Henrique Silva" 
+                         class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__title">Dr. Henrique Silva</h3>
+                        <span class="card__badge">CRMV 15.890</span>
+                        <p class="card__text">Especialista em Neurologia e Ortopedia Animal.</p>
+                    </div>
+                </article>
 
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1714976326828-4d138f258170?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                alt="">
-                            <p> Dra. Juliana Mendes - CRMV 18.210 - Especialista em Medicina de Felines e
-                                Cardiologia.</p>
-                        </div>
-
-                    </article>
-                </div>
-            </section>
+                <article class="card card--vet">
+                    <img src="https://images.unsplash.com/photo-1714976326828-4d138f258170?q=80&w=1332&auto=format&fit=crop" 
+                         alt="Dra. Juliana Mendes" 
+                         class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__title">Dra. Juliana Mendes</h3>
+                        <span class="card__badge">CRMV 18.210</span>
+                        <p class="card__text">Especialista em Medicina de Felinos e Cardiologia.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
             <!-- seção infraestrutura -->
-            <section id="infraestrutura" class="section-duvida">
-                <div class="section-duvida__container">
-                    <article class="section-duvida__content">
-                        <h2 class="section-duvida__title"> Estrutura e Horários de Atendimento</h2>
+                <section id="infraestrutura" class="section">
+            <div class="section__header">
+                <h2 class="section__title">Estrutura e Horários de Atendimento</h2>
+            </div>
 
-                        <p class="section-duvida__text">
-                            Contamos com centro cirúrgico equipado com anestesia inalatória, laboratório de análises
-                            clínicas próprio e leitos de UTI individualizados com monitoramento contínuo.
-                            Informação de Atendimento: Pronto Atendimento 24h para urgências e emergências.
-                            Consultas ambulatoriais de Segunda a Sábado, das 08:00 às 20:00
-                        </p>
+            <div class="infra-content">
+                <article class="infra-content__text-box">
+                    <p class="infra-content__text">
+                        Contamos com centro cirúrgico equipado com anestesia inalatória, laboratório de análises clínicas próprio e leitos de UTI individualizados com monitoramento contínuo.
+                    </p>
+                </article>
 
-                    </article>
+                <div class="hours-box">
+                    <h3 class="hours-box__title">Informações de Atendimento</h3>
+                    <p class="hours-box__item"><strong>Pronto Atendimento 24h:</strong> Urgências e emergências todos os dias.</p>
+                    <p class="hours-box__item"><strong>Consultas Ambulatoriais:</strong> Segunda a Sábado, das 08:00 às 20:00.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
+            <!-- FAQS -->
             <section id="faq" class="faq">
                 <h2 class="faq__title">Perguntas Frequentes</h2>
                 <div class="faq__wrapper">
@@ -167,14 +203,13 @@
 
         </main>
 
-        <footer class="footer">
-        <div class="footer__section">
-            <p>VetCare Hospital Veterinário - Atendimento 24 Horas.</p>
+    <!-- rodapé -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">VetCare Hospital Veterinário - Atendimento 24 Horas.</p>
+            <p class="footer__text">&copy; 2026 VetCare. Todos os direitos reservados.</p>
         </div>
-        <div class="foter__section">
-            <address>&copy; 2026 VetCare. Todos os direitos reservados.</address>
-        </div>
-
     </footer>
+
     </body>
 </html>
