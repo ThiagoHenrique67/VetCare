@@ -1,7 +1,11 @@
 @import './variable.css';
 @import './reset.css';
 
+body{
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    color: var(--color-text-body);
+    background-color: var(--color-bg-main);
+    overflow-x: hidden;
+}
 
-
-
-  
